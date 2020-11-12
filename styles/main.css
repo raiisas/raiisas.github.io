@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Nunito+Sans&family=Quicksand&family=Titillium+Web:wght@200&display=swap');
+
+/* To change the background of the entire website, select body and use property background-color. */
+body {
+    background-color: #ebecf4; 
+    color: #403630;
+    font-family: 'Quicksand', sans-serif, Arial, Helvetica;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 400px;
+    list-style-type: none;
+    justify-content: space-between;
+    text-align: left;
+    vertical-align: middle;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul img#logo {
+    text-decoration: none;
+    padding-top: 0px;
+    width: 40px;
+    height: auto;
+}
+
+nav ul li a:link {
+    color: brown;
+    text-decoration: none;
+}
+
+nav ul li a:visited {
+    color: brown;
+}
+
+nav ul li a:hover {
+    color: darkcyan;
+}
+
+nav ul li a:active {
+     color: tomato;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+}
+
+main div#left {
+    grid-column-start: 1;
+    grid-row-end: 1;
+    width: 500px;
+}
+
+main div#right {
+    grid-column-start: 2;
+    grid-row-end: 1; 
+}
+
+/* Grid Text Styles */
+main p#hello, main p#name, main p#about, main ul#handle {
+    color: rgb(111, 68, 3);
+    text-align: left;
+    vertical-align: top;
+    margin-left: 200px;
+    padding: 0px 5px 0px 10px;
+}
+main p#hello {
+    color: rgb(111, 68, 3);
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'Quicksand', sans-serif, Arial, Helvetica;
+}
+
+main p#name {
+    color: tomato;
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'Heebo', sans-serif, Arial, Helvetica;
+    line-height: 70px;
+}
+
+main p#about {
+    color: rgb(111, 68, 3);
+    font-size: 15px;
+    font-weight: 800;
+    font-family: 'Quicksand', sans-serif, Arial, Helvetica;
+    line-height: 30px;
+}
+
+/* Handles & Resume */
+main ul#handle {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    grid-column-start: 1;
+    grid-row-end: 3; 
+    font-size: 12px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    padding: 5px 10px 5px 0px;
+}
+
+main ul#handle a:link {
+    color: tomato;
+    text-decoration: none;
+}
+
+main ul#handle a:visited {
+    color: tomato;
+}
+
+main ul#handle a:hover {
+    color: darkcyan;
+}
+
+main ul#handle a:active {
+     color: brown;
+}
+
+/* Image */
+main img#banner-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Newsletter */
+main input#email {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background-color: #ebecf4;
+    color: #2A403F;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: 800;
+    border: 1px solid #2A403F;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+}
+
+main input#submit {
+    display: inline-block;
+    width: 95px;
+    height: 67px;
+    background-color: tomato;
+    color: #f7f7f7;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: 800;
+    border: 1px solid #f7f7f7;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+}
+
+/* Flexbox Boxes*/
+main div#box1, main div#box2 {
+    width: 45%;
+    padding-right: 5px;
+    justify-content: center;
+    align-content: space-between;
+
+}
+
+main div#box3, main div#box4 {
+    width: 45%;
+    padding-left: 5px;
+}
+
+main div#description {
+    background-color: rgb(111, 68, 3);
+}
+
+main h1 {
+    color: tomato;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 0px 10px 0px;
+}
+
+main h2 {
+    color: tomato;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main footer p#footer{
+    background-color: #f7f7f7; 
+    color: #2A403F;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+footer {
+    background-color: #f7f7f7;
+}
+
+/* Responsive to 700 width */
+@media only screen and (min-width: 700px) {
+    main div#box-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 50px 0px 50px;
+    }
+
+    main h1 {
+        margin: 20px 50px 20px 50px;
+    }
+}
+
+/* Responsive to 960 width */
+@media only screen and (min-width: 960px) {
+    
+    header, main, footer {
+        height: auto;
+        margin: 0px 0px 5px 0px;
+    }
+
+    main div#newsletter {
+    display: block;
+    margin: 2px 0px 5px 0px;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    position: relative;
+    }
+
+    footer p#footer {
+        height: 50px;
+        padding: 40px 0px 20px 0px;
+        text-align: center;
+        vertical-align: middle;
+    }
+}
