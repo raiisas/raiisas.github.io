@@ -144,10 +144,10 @@ main input#email {
     vertical-align: middle;
     font-size: 15px;
     font-weight: 800;
+    text-decoration: none;
     border: 1px solid #2A403F;
     border-radius: 5px;
     padding: 10px 15px 10px 15px;
-    text-decoration: none;
 }
 
 main input#submit {
@@ -160,10 +160,10 @@ main input#submit {
     vertical-align: middle;
     font-size: 15px;
     font-weight: 800;
+    text-decoration: none;
     border: 1px solid #f7f7f7;
     border-radius: 5px;
     padding: 10px 15px 10px 15px;
-    text-decoration: none;
 }
 
 /* Flexbox Boxes*/
@@ -447,7 +447,7 @@ main div#wordsRemaining {
     main div#newsletter {
     display: block;
     margin: 2px 0px 5px 0px;
-    padding: 20px 0px 20px 0px;
+    padding: 0px 0px 100px 200px;
     text-align: center;
     position: relative;
     }
